@@ -1,0 +1,145 @@
+.navbar-container{
+    height: 65px;
+    width: 100%;
+    /* box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); */
+    border-bottom: 1px solid rgb(234, 222, 222);
+     
+     
+}
+
+.navbar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 45px;
+    padding-right: 30px ;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.navbar-left{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navbar-left-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.envelope-icon{
+    height: 25px;
+    width: 20px;
+    color:blue;
+    padding-right: 5px;
+}
+
+.nav-list-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-item{
+    list-style: none;
+    margin-right: 30px;
+    margin-left: 20px;
+    font-weight: 500;
+
+}
+.extra-page{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.login-button{
+    /* height: 16px; */
+    padding-left: 12px;
+   padding-right:12px ;
+   padding-top: 8px;
+   padding-bottom:8px;
+   border: 1px solid grey;
+   color: blue;
+   font-weight: 500;
+   border-radius: 7px;
+   margin-right: 7px;
+}
+
+.signup-button{
+    padding-left: 12px;
+    padding-right:12px ;
+    padding-top: 8px;
+    padding-bottom:8px;
+    font-weight: 500;
+   border-radius: 7px;
+   background-color: blue;
+   color: white;
+   margin-left: 7px;
+   cursor: pointer;
+
+
+}
+
+#rent{
+    padding-left: 12px;
+    padding-right:12px ;
+    padding-top: 5px;
+    padding-bottom:5px;
+    color: blue;
+    background-color:rgb(216, 198, 198) ;
+
+}
+.icon-style{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.list-icon{
+    margin-left: -25px;
+    margin-right:8px;
+    color: black;
+    font-weight: 900;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .navbar-header{
+        /* display: flex;
+         flex-direction: column; 
+        /* justify-content: space-between;
+        align-items: center; */
+        /* padding-left: 45px;
+        padding-right: 30px ; */
+        /* width: 100%; */
+        /* height: 100%; */
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .navbar-left{
+        flex-direction: column; 
+        width: 100%;
+
+    }
+
+    .navbar-right{
+        flex-direction: column; 
+        width: 100%;
+        padding-top: 10px;
+
+    }
+
+
+
+}

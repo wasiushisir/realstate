@@ -1,23 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './component/Header/Header';
+import Navbar from './component/Navbar/Navbar';
+import Homepage from './component/Homepage/Homepage';
+import { Route, Routes } from 'react-router-dom';
+import FavaoritePage from './component/FavouritePage/FavaoritePage';
+import { useState } from 'react';
 
 function App() {
+  const [favouriteProperty,setFavaouriteProperty]=useState([])
+  const handleFavauritePage=(data)=>{
+        console.log(data);
+    let newProperty=[...favouriteProperty,data]
+       setFavaouriteProperty(newProperty);
+      
+    }
+   
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Header></Header>
+      <Navbar></Navbar>
+     
+      <Routes>
+        <Route path='favouritePage' element={<FavaoritePage favouriteProperty={favouriteProperty} ></FavaoritePage>}></Route>
+        <Route path='/' element={<Homepage handleFavauritePage={handleFavauritePage}></Homepage>}></Route>
+      </Routes>
+      
+      
     </div>
   );
 }
